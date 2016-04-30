@@ -28,6 +28,19 @@ npm config set disturl https://npm.taobao.org/dist
 另，执行init时切记不要在前面加上sudo（否则新项目的目录所有者会变为root而不是当前用户，导致一系列权限问题，请使用chown修复）。  
 本站论坛区提供了[完整的绿色纯净新项目包](http://bbs.reactnative.cn/topic/11)。完整打包全部iOS和Android的第三方依赖，只要环境配置正确，无需科学上网漫长等待，解压即可直接运行。
 
+```__Taakey__bash
+To run your app on iOS:
+   cd /Users/imac/gitprojects/AwesomeProject
+   react-native run-ios
+   - or -
+   Open /Users/imac/gitprojects/AwesomeProject/ios/AwesomeProject.xcodeproj in Xcode
+   Hit the Run button
+To run your app on Android:
+   Have an Android emulator running (quickest way to get started), or a device connected
+   cd /Users/imac/gitprojects/AwesomeProject
+   react-native run-android
+```
+
 ## 开发
 
 想开发iOS版本，你现在可以在XCode中打开刚刚创建的工程(`AwesomePrjoect/iOS/AwesomeProject.xcodeproj`)，然后只要按下`⌘+R`就可以构建并运行。这个操作会同时打开一个用于实现动态代码加载的Node服务（React Packager）。所以每当你修改代码，你只需要在模拟器中按下`⌘+R`，而无需重新在XCode中编译。
